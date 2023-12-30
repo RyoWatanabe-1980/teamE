@@ -1,0 +1,129 @@
+
+
+@charset "utf-8";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#navigation {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    line-height: 80px;
+}
+
+#navigation i.material-icons {
+    line-height: 80px;
+    font-size: 2.1rem;
+}
+
+nav .nav-title {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-large.choice {
+    height: 64px;
+    line-height: 64px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.margin-horizontal-64 {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+
+#footer {
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copyright {
+    max-height: 80px;
+}
+
+
+.footer-copyright .container.width-100 {
+    width: 100%;
+}
+
+
+.footer-copyright .row {
+    padding-top: 16px;
+}
+
+.footer-copyright .col {
+    padding: 0 !important;
+}
+
+.padding-top-0 {
+    padding-top: 0;
+}
+
+.container h6 {
+    line-height: 48px;
+}
+
+/* Style for the 'x' element */
+.x-element {
+    position: absolute;
+    color: red;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+@media only screen and (min-height: 430px) and (min-width: 390px) {
+    .btn.choice {
+        height: 54px;
+        line-height: 54px;
+        padding: 0 28px;
+    }
+}
+
+/* for landscape */
+@media only screen and (min-width: 601px) and (max-height: 500px) {
+    #main .row .col {
+        height: 100%;
+    }
+}
+
+/* for portlait */
+@media only screen and (max-width: 600px) {
+    #main .row .col {
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (min-height: 561px) {
+    .m6>.btn.choice {
+        min-height: 200px;
+    }
+
+}
